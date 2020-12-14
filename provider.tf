@@ -1,3 +1,8 @@
-provider "aws" {
-  region = "ap-south-1"
+resource "azurerm_resource_group" "myterraformgroup" {
+    name     = "myResourceGroup"
+    location = "westus"
+
+    tags = {
+        environment = "Terraform Demo"
+    }
 }
